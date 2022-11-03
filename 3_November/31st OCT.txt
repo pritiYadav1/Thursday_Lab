@@ -1,0 +1,246 @@
+Loops
+
+Pre tested loop
+
+for
+while
+
+Post tested loop
+
+do while
+
+
+
+for Loops
+----------
+
+Syntax:
+
+for(inti ; cond ; deci)
+{
+	
+}
+
+
+for(i=1; i<=100;i+2)
+{
+ Display i
+}
+
+1-----100
+
+1,2,3,4,5
+
+
+100 99 ,98 ----1
+
+
+
+456---123
+
+for(i=456;i>=123;i--)
+
+WAP to accept amin and max value from the user and or display the between numbers
+
+
+while loop:
+syntax:
+
+while(condition)
+{
+
+}
+
+
+do
+{
+Statments
+}
+while(con);
+
+
+
+order system.
+
+
+
+ABC hotel
+
+
+1.S
+2.M
+3.D
+1
+----
+Sta
+item----190 rs.
+item
+
+
+3
+Do
+2 
+
+
+
+
+
+
+
+Bill:
+
+Item 20
+
+total=400rs
+
+
+
+--------------
+import java.util.Scanner;
+
+public class for_demo 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		disp1();
+	}
+	
+	public static void disp1()
+	{
+		Scanner sc =new Scanner(System.in);
+		int i,min , max ;
+		
+		System.out.println("Enter the minimum number");
+		min=sc.nextInt();
+		System.out.println("Enter the maximum number");
+		max=sc.nextInt();
+		
+		for(i=min;i<=max;i++)
+		{
+			System.out.println(i);
+		}
+	}
+	
+	
+	public static void demo()
+	{
+		int i;
+		for(i=1;i<=8;i++)
+		{
+			switch(i)
+			{
+			case 1:
+				System.out.println("MOnday");
+				break;
+			case 2:
+				System.out.println("Tuesday");
+				break;
+			case 3:
+				System.out.println("Webnday");
+				break;
+			case 4:
+				System.out.println("Thursday");
+				break;
+			case 5:
+				System.out.println("Friday");
+				break;
+			case 6:
+				System.out.println("Satday");
+				break;
+			case 7:
+				System.out.println("Sunday");
+				break;
+				default:
+					System.out.println("Invalid Number");
+					break;
+				
+			}
+		}
+	}
+	
+	
+	
+	public static void disp()
+	{
+		int i;
+		/*for(i=100;i>=1;i--)	
+		{
+			
+			System.out.println("i="+i);
+		}*/
+		
+		for(i=39;i<=100;i++)
+		{
+			if(i%2==0)
+			{
+				System.out.print(i+"\t");
+			}
+		}
+	}
+
+}
+----------------------------
+import java.util.Scanner;
+
+public class while_demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		disp1();
+	}
+
+	public static void disp1()
+	{
+		Scanner sc =new Scanner(System.in);
+		int min,max ;
+		
+		System.out.println("Enter the minimum number");
+		min=sc.nextInt();
+		System.out.println("Enter the maximum number");
+		max=sc.nextInt();
+		
+		
+		while(min<=max)
+		{
+			System.out.println("i="+min);
+			min++;
+		}
+		
+	}
+}
+-------------
+import java.util.Scanner;
+
+public class DO_while_demo11 {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		food();
+	}
+	public static void food()
+	{
+		System.out.println("Welcome to ABC HOtel");
+		int choice;
+		char ans;
+		Scanner sc=new Scanner(System.in);
+		do
+		{
+			System.out.println("Menu:");
+			System.out.println("1:Item1");
+			System.out.println("2:Item1");
+			System.out.println("3:Item1");
+			System.out.println("4:Item1");
+			choice=sc.nextInt();
+			
+			System.out.println("Do you want to continue this process y/n");
+			ans=sc.next().charAt(0);
+		}
+		while(ans=='y' ||ans=='Y');
+		
+		System.out.println("Thanks for coming :)");
+	}
+
+}
